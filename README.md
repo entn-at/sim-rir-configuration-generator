@@ -42,5 +42,9 @@ for config in room_param_generator:
 
 ```
 
+# Acknowledge
+1. I borrowed some code from [sim-rir-preparation](https://github.com/tomkocse/sim-rir-preparation/blob/master/prep_sim_rirs.sh).
+2. We can generate room simulations parameter with [room-simulation](https://github.com/ebezzam/room-simulation) and [pyroomacoustics](https://github.com/LCAV/pyroomacoustics).
+
 # Citations
 [Generation of large-scale simulated utterances in virtual rooms to train deep-neural networks for far-field speech recognition in Google Home](https://static.googleusercontent.com/media/research.google.com/zh-CN//pubs/archive/46107.pdf)
