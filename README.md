@@ -1,5 +1,5 @@
 # Simulate Virtual Rooms Configuration
-Generate large-scale simulated data for training deep neural networks for far-field speech recognition.
+Generate large-scale simulated room configuration
 
 # How to use
 
