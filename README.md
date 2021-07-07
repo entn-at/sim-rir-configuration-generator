@@ -1,6 +1,9 @@
 # Simulate Virtual Rooms Configuration
 Generate large-scale simulated room configuration
 
+Sound source localization as show in figure below:
+![image](example.png)
+
 # How to use
 
 ```python
