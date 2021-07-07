@@ -3,12 +3,10 @@
 
 import param_generator
 
-import numpy as np
-
 if __name__ == '__main__':
-    pa = param_generator.ParameterGenerator(
+    room_param_generator = param_generator.ParameterGenerator(
         sample_num=3,
-        seed=1234,
+        seed=42,
         config={
             'room': {
                 'x': [3, 10],
@@ -27,14 +25,14 @@ if __name__ == '__main__':
         }
     )
 
-    for p in pa:
-        if p is None:
+    for config in room_param_generator:
+        if config is None:
             continue
 
-        for k, v in p.items():
-            print("="*20, k, "="*20)
-            if k == "noise_sources":
-                for v in v:
-                    print("    ", v)
+        for source_type, config in config.items():
+            print("="*20, source_type, "="*20)
+            if source_type == "noise_sources":
+                for i in config:
+                    print("    ", i)
             else:
-                print("    ", v)
+                print("    ", config)
